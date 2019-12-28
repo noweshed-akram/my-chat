@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/accountsId"
+            android:icon="@drawable/ic_person"
+            android:title="My Account" />
+        <item
+            android:id="@+id/settingsId"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/shareId"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/aboutId"
+                android:icon="@drawable/ic_about"
+                android:title="About" />
+
+            <item
+                android:id="@+id/quitId"
+                android:title="Quit"
+                android:icon="@drawable/ic_logout"/>
+        </menu>
+    </item>
+</menu>

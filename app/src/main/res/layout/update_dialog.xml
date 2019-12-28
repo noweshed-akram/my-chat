@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Name:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/updateNameId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Status:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/updatestatusId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hi there..." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="City:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/updateCityId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dhaka, Bangladesh" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Email:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/updateEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="example@example.com" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Phone:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/updatePhoneId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="+8801"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="10dp"
+            android:text="BirthDay:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <DatePicker
+            android:id="@+id/updateBirthId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</ScrollView>

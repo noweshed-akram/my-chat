@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Allusers">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/fromUserBackId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:tint="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/findfriendsId"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toLeftOf="@id/searchFriendId"
+            android:layout_toRightOf="@id/fromUserBackId"
+            android:background="@drawable/btn_bg4"
+            android:hint="Find Your Friend's..."
+            android:keepScreenOn="true"
+            android:lines="1"
+            android:paddingStart="15dp"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/searchFriendId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_propic_bg"
+            android:src="@drawable/ic_search" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel1"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/userListId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/userAppbar">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

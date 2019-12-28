@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/msgLayoutId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/RcvMsgProPicId"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="5dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/default_propic"
+        app:civ_border_color="@color/colorSecondaryDark"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/ReceiveMsgId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/RcvMsgProPicId"
+        android:background="@drawable/message_bg2"
+        android:backgroundTint="@color/colorSecondary"
+        android:lineSpacingExtra="2dp"
+        android:maxWidth="250dp"
+        android:padding="8dp"
+        android:text="New Message..."
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/SendMsgId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/send"
+        android:background="@drawable/message_bg"
+        android:lineSpacingExtra="2dp"
+        android:maxWidth="250dp"
+        android:padding="8dp"
+        android:text="New Message..."
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/recvImageMsg"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_toEndOf="@id/RcvMsgProPicId"
+        android:background="@drawable/ic_picbtn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/send"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignBottom="@id/SendMsgId"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:src="@drawable/ic_seen"
+        android:tint="@color/ash" />
+
+    <ImageView
+        android:id="@+id/sendImageMsg"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_toStartOf="@id/imageSend"
+        android:background="@drawable/ic_picbtn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageSend"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignBottom="@id/sendImageMsg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:src="@drawable/ic_seen"
+        android:tint="@color/ash"
+        android:visibility="gone" />
+
+</RelativeLayout>
